@@ -3,7 +3,7 @@
     <NavBar/>
 
     <div id="title">
-      <h2>DASHBOARD</h2> 
+      <h2>DASHBOARD</h2>
       <span>
         Group <font-awesome-icon icon="fa-solid fa-caret-down"/>
           <div>
@@ -26,7 +26,7 @@
     <div v-if="$store.state.showModal">
       <Modal/>
     </div>
-    
+
   </div>
 </template>
 
@@ -70,7 +70,7 @@ h2 {
   position: absolute;
   background: #ede5e5;
   margin-top: 5px;
-  
+
 }
 #title span div {
   display: none;
@@ -78,7 +78,7 @@ h2 {
   text-align: center
 }
 #title span div ul {
-  
+
 }
 #title span div li {
   list-style: none;
@@ -88,20 +88,19 @@ h2 {
 }
 #title span div li:hover {
   background: white;
-  
+
 }
 #plus-background {
   text-align: end;
   margin-right: 100px;
-  
-  
+
+
 }
 #plus {
   background: #4545f3;
   color: white;
   padding: 18px 20px;
   border-radius: 50%;
-  text-align: flex-end;
   font-size: 20px;
   cursor: pointer;
   box-shadow: 0px 1px 20px 2px;

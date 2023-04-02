@@ -7,16 +7,17 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
-import { faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons'
-import { faCaretDown} from '@fortawesome/free-solid-svg-icons'
-import { faUser } from '@fortawesome/free-solid-svg-icons'
-import { faFolder } from '@fortawesome/free-solid-svg-icons'
-import { faHouse } from '@fortawesome/free-solid-svg-icons'
-import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
+import {fas} from '@fortawesome/free-solid-svg-icons'
+//import { faBars } from '@fortawesome/free-solid-svg-icons'
+//import { faPlus } from '@fortawesome/free-solid-svg-icons'
+//import { faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons'
+//import { faCaretDown} from '@fortawesome/free-solid-svg-icons'
+//import { faUser } from '@fortawesome/free-solid-svg-icons'
+//import { faFolder } from '@fortawesome/free-solid-svg-icons'
+//import { faHouse } from '@fortawesome/free-solid-svg-icons'
+//import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faBars, faArrowRightToBracket, faUser, faFolder, faHouse, faCaretDown, faPlus, faTimesCircle)
+library.add(fas)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
