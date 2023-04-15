@@ -3,9 +3,9 @@
         <div id="menu-bar" v-if= $store.state.drawer>
             <ul>
             <li id="Bar" @click="$store.commit('toggleDrawerOut')"><font-awesome-icon icon="fa-solid fa-bars"/></li>
-            <li><font-awesome-icon icon="fa-solid fa-house" class="drawer-icon"/>Dashboard</li>
-            <li><font-awesome-icon icon="fa-solid fa-folder" class="drawer-icon"/>My Projects</li>
-            <li><font-awesome-icon icon="fa-solid fa-user" class="drawer-icon"/>Team</li>
+            <li><router-link to="/"><font-awesome-icon icon="fa-solid fa-house" class="drawer-icon"/>Dashboard</router-link></li>
+            <li><router-link to="#"><font-awesome-icon icon="fa-solid fa-folder" class="drawer-icon"/>My Projects</router-link></li>
+            <li><router-link to="#"><font-awesome-icon icon="fa-solid fa-user" class="drawer-icon"/>Team</router-link></li>
             </ul>
         </div>
         <div id="Nav">
@@ -18,7 +18,7 @@
             <div id="right-side">
                 <ul>
                     <li><p>SIGN IN</p></li>
-                    <li id="signin"><font-awesome-icon icon="fa-solid fa-arrow-right-to-bracket"/></li>
+                    <li id="signin"><router-link to="/Signin"><font-awesome-icon icon="fa-solid fa-arrow-right-to-bracket"/></router-link></li>
                 </ul>
             </div>
         </div>
@@ -73,8 +73,13 @@ export default {
     font-family: sans-serif;
     cursor: pointer;
     color: white;
-    font-size: 15px
+    font-size: 15px;
 }
+#menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
 .drawer-icon {
     padding: 0 20px 0 0;
     font-size: 20px
@@ -97,6 +102,16 @@ export default {
 }
 #signin {
     padding: 10px 45px 10px 10px
+}
+#signin a {
+    text-decoration: none;
+    color: #000;
+}
+@media only screen and (max-width: 860px) {
+}
+@media only screen and (max-width: 500px) {
+}
+@media only screen and (max-width: 390px) {
 }
 
 </style>

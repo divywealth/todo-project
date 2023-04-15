@@ -62,5 +62,10 @@ export default {
     position: fixed;
     top: 0
 }
-
+@media only screen and (max-width: 860px) {
+}
+@media only screen and (max-width: 500px) {
+}
+@media only screen and (max-width: 390px) {
+}
 </style>

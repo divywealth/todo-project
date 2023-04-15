@@ -32,7 +32,8 @@ export default new Vuex.Store({
         dueby: "1st jan 2021",
         status: "overdue",
       }
-    ]
+    ],
+    
   },
   getters: {
   },
@@ -75,6 +76,7 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    
   },
   modules: {
   }
