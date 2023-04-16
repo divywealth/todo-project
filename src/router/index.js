@@ -29,6 +29,11 @@ const routes = [
     name: 'sign-up',
     component: () => import('../views/Registration.vue')
   },
+  {
+    path: '/:catchAll(.*)',
+    name: 'NotFound',
+    component:  () => import(/* webpackChunkName: "single-product" */ '../views/NotFound.vue')
+  }
 
 ]
 
